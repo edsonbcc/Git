@@ -3,8 +3,10 @@
 using namespace std;
 
 class HelloWorld {
+private:
 	string str;
 
+public:
 	HelloWorld(string str) {
 		this->str = str;
 	}
