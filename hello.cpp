@@ -1,12 +1,25 @@
 #include <iostream>
+#Include <string>
 using namespace std;
 
+class HelloWorld {
+	string str;
+
+	HelloWorld(string str) {
+		this->str = str;
+	}
+
+	void print () {
+		cout << str << endl;
+	}
+
+};
 
 int main () {
 
-	cout << "Hello World!" << endl;
-	int a=2, b =3, c;
-	c = a + b;
-	cout << "o valor de C eh: " << c << endl;
+	HelloWorld * H = new HelloWorld("Hello World!!!!!");
+
+	H->print();
+
 	return 0;
 }
